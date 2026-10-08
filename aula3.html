@@ -29,8 +29,8 @@
     <p id="ex6">6 - Alterar o texto do primeiro exercicio utilizando o querySelector.</p>
     <p id="ex7">7 - Alterar o texto em negrito do elemento da primeira classe "comandos" utilizando querySelector.</p>
     <p id="ex8">8 - Alterar a div; arredondar as bordas, cor de fundo rosa claro, cor do texto branco.</p>
-    <p id="ex9">9 - </p>
-    <p id="ex10">10 - </p>
+    <p id="ex9">9 - Alterar exercicios 1 e 2 para variaveis</p>
+    <p id="ex10">10 - Colocar os botoes para funcionar</p>
     
   </div>
 
@@ -57,9 +57,19 @@
     document.querySelector("div").style.backgroundColor = "pink";
     document.querySelector("div").style.color = "#00008B";
     //exemplo9
+    let ex1 = document.getElementById("ex1");
+    let ex2 = document.getElementById("ex2");
 
+    ex1.innerHTML = "Item 1";
+    ex2.innerHTML = "Item 2";
     //exemplo10
+    document.getElementsByTagName("button")[0].onclick = function () {
+      document.querySelector("div").style.display = "none";
+    };
 
+    document.getElementsByTagName("button")[1].onclick = function () {
+      document.querySelector("div").style.display = "block";
+    };
   </script>
 </body>
 </html>
