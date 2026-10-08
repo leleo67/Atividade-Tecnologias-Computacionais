@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <p>Menu 1</p>
+      <p>Menu 2</p>
+      <p>Menu 3</p>
+    </nav>
+  </header>
+  <main>
+    <h2 id="titulo">Aula 3 - Javascript DOM</h2>
+    <p class="comandos">getElementById</p>
+    <p class="comandos">getElementsByTagName</p>
+    <p class="comandos">getElementsByClassName</p>
+    <p>Comandos para pegar os elementos.</p>
+  </main>
+  <div>
+    <p id="ex1">1 - Alterar o texto do "Menu 1" para Item 1.</p>
+    <p id="ex2">2 - Alterar o texto do "Menu 2" para "Item 2" através da Tag.</p>
+    <p id="ex3">3 - Inserir parênteses () nos comandos da classe "comandos".</p>
+    <p id="ex4">4 - Alterar a cor do id "ex1", do segundo item da classe "comandos" para verde.</p>
+    <p id="ex5">5 - Colocar uma borda na div com o querySelector.</p>
+  </div>
+  </div>
+  <script>
+    //exemplo1 
+    document.getElementsByTagName("p")[0].innerHTML = "Item 1";
+    //exemplo2
+    document.getElementsByTagName("p")[1].innerHTML = "Item 2";
+    //exemplo3
+    document.getElementsByClassName("comandos")[0].innerHTML = document.getElementsByClassName("comandos")[0].innerHTML + "()";
+    document.getElementsByClassName("comandos")[1].innerHTML = document.getElementsByClassName("comandos")[1].innerHTML + "()";
+    document.getElementsByClassName("comandos")[2].innerHTML = document.getElementsByClassName("comandos")[2].innerHTML + "()";
+    //exemplo4
+    document.getElementById("ex1").style.color = "green";
+    document.getElementsByClassName("comandos")[1].style.color = "green";
+  </script>
+</body>
+</html>
