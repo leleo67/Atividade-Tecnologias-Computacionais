@@ -26,6 +26,8 @@
     <p id="ex3">3 - Inserir parênteses () nos comandos da classe "comandos".</p>
     <p id="ex4">4 - Alterar a cor do id "ex1", do segundo item da classe "comandos" para verde.</p>
     <p id="ex5">5 - Colocar uma borda na div com o querySelector.</p>
+    <p id="ex6">6 - Alterar o texto do primeiro exercicio utilizando o querySelector.</p>
+    <p id="ex7">7 - Alterar o texto em negrito do elemento da primeira classe "comandos" utilizando querySelector.</p>
   </div>
   </div>
   <script>
@@ -40,6 +42,12 @@
     //exemplo4
     document.getElementById("ex1").style.color = "green";
     document.getElementsByClassName("comandos")[1].style.color = "green";
+    //exemplo5
+    document.querySelector("div").style.border = "3px dashed red";
+    //exemplo6
+    document.querySelector("div p").style.fontSize = "24px";
+    //exemplo7
+    document.querySelector(".comandos")[0].style.fontWeight = "bold";
   </script>
 </body>
 </html>
